@@ -1,0 +1,82 @@
+/* Tag selectors */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* Class selectors */
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto; /* Pushes the footer to the bottom */
+}
+
+/* ID selector */
+#highlight {
+    background-color: #ffdf00;
+    font-weight: bold;
+}
+
+/* Descendant selector */
+.container p {
+    line-height: 1.5;
+    margin-top: 15px;
+}
+
+/* Attribute selector */
+a[href^="mailto:"] {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
+/* Other Bootstrap customizations */
+.bg-blue {
+    background-color: #007bff;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Add this to make the footer stick to the bottom */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* This ensures that the content grows to fill available space */
+}
+
+.btn {
+    margin: 10px;
+}
+
+.row > div {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
